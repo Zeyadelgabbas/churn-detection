@@ -47,9 +47,9 @@ churn-detection/
   "HasCrCard": 0,
   "IsActiveMember": 0,
   "EstimatedSalary": 0
-}
+} ```
 
-Output
+### Output
 {
   "churn_predictions": {
     "xgb": false,
