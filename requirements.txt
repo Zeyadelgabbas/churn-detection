@@ -7,3 +7,4 @@ python-dotenv
 matplotlib
 seaborn
 python-multipart
+pydantic
