@@ -4,7 +4,7 @@ A customer churn prediction service using **XGBoost** and **Random Forest**.
 Given customer attributes, the API returns whether the customer will churn and the probabilities from both models.
 
 ---
-```
+
 ## 🗂️ Repository Structure
 ```bash
 churn-detection/
@@ -18,7 +18,7 @@ churn-detection/
 ├── data/ # (optional) raw / processed datasets
 └── README.md
 ```
-```
+
 ---
 
 ## 🧠 How It Works
