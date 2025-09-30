@@ -63,20 +63,21 @@ churn-detection/
   }
 }
 ```
-🔌 API Endpoints & Authentication
-GET /
+## 🔌 API Endpoints & Authentication
+### GET /
 
-Health check: returns a simple welcome message.
+* Health check: returns a simple welcome message.
 
-POST /predictions
+### POST /predictions
 
-Requires header: X-API-Key: <your_secret_token>
+* Requires header: X-API-Key: <your_secret_token>
 
-Body: JSON matching CustomerData.
+* Body: JSON matching CustomerData.
 
-Returns predictions and probabilities as shown above.
+* Returns predictions and probabilities as shown above.
 
-🛠 Installation & Running
+## 🛠 Installation & Running
+```bash
 git clone https://github.com/Zeyadelgabbas/churn-detection.git
 cd churn-detection
 python -m venv venv
@@ -87,17 +88,25 @@ venv\Scripts\activate
 source venv/bin/activate
 
 pip install -r requirements.txt
-Run the API:
+```
+### Run the API:
+```bash
 uvicorn main:app --reload
+```
 Visit Swagger UI at:
 http://127.0.0.1:8000/docs
-🔒 Authentication
 
-This API uses a simple API key mechanism. You must include your secret key in the request header:
-X-API-Key: your_secret_token
-If the key is missing or incorrect, the API returns 403 Not authorized.
+## 🔑 Authentication
 
-📈 Model Details & Notes
+This API requires an **API Key** for authentication.
+
+1. Create a `.env` file in the root of your project and add the following:
+
+```env
+SECRET_KEY_TOKEN=your_secret_token_here
+```
+
+## 📈 Model Details & Notes
 
 Uses XGBoost and RandomForest for classification.
 
@@ -105,7 +114,7 @@ Preprocessing ensures input data matches training format (scaling, encoding, etc
 
 The predictions are based on the probability of the positive class (churn).
 
-🚧 Future Improvements
+## 🚧 Future Improvements
 
 Add model interpretability (SHAP/LIME) to explain why a customer might churn.
 
