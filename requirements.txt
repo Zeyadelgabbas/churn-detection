@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+scikit-learn
+xgboost
+imbalanced-learn
+python-dotenv
+matplotlib
+seaborn
+python-multipart
