@@ -47,9 +47,11 @@ churn-detection/
   "HasCrCard": 0,
   "IsActiveMember": 0,
   "EstimatedSalary": 0
-} ```
+}
+ ```
 
 ### Output
+```json
 {
   "churn_predictions": {
     "xgb": false,
@@ -60,6 +62,7 @@ churn-detection/
     "forest": 0.38248286818369204
   }
 }
+```
 🔌 API Endpoints & Authentication
 GET /
 
